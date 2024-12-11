@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Lynette Shen - showcasing UX/UI case studies, design works, and contact details.">
-    <title>Lynette Shen's Portfolio</title>
+    <meta name="description" content="About Lynette Shen - Product Designer with a passion for creativity and user-centric solutions.">
+    <title>About Me - Lynette Shen</title>
     <style>
         * {
             margin: 0;
@@ -60,41 +60,27 @@
         header {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             height: 100vh;
-            text-align: left;
+            text-align: center;
             background: linear-gradient(145deg, #1a1a1a, #2a3a3a);
             position: relative;
             overflow: hidden;
-            padding-left: 10%;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: -10%;
-            left: -10%;
-            width: 120%;
-            height: 120%;
-            background: radial-gradient(circle, rgba(255,87,34,0.3), transparent);
-            transform: rotate(45deg);
-            z-index: 0;
+            padding: 0 10%;
         }
 
         header h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            z-index: 1;
             position: relative;
             animation: fadeIn 2s ease-in-out;
         }
 
         header p {
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 700px;
             margin-bottom: 30px;
-            z-index: 1;
             position: relative;
             animation: fadeIn 2.5s ease-in-out;
         }
@@ -108,7 +94,6 @@
             font-weight: bold;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
-            z-index: 1;
             position: relative;
             animation: fadeIn 3s ease-in-out;
         }
@@ -135,41 +120,28 @@
             margin-bottom: 20px;
         }
 
-        /* Case Study Section */
-        .case-stud {
-            text-align: center;
-        }
-
-        .case-stud img {
-            width: 300px; /* Resize image to an appropriate size */
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .case-stud img:hover {
-            transform: scale(1.1); /* Pop-out effect */
-            box-shadow: 0 8px 15px rgba(255, 87, 34, 0.5);
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
+            align-items: center;
+            justify-content: center;
         }
 
-        .gallery img {
-            width: 100%;
+        .about-content img {
+            max-width: 300px;
             border-radius: 10px;
-            transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
-            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .gallery img:hover {
+        .about-content img:hover {
             transform: scale(1.05);
-            opacity: 0.9;
-            box-shadow: 0 8px 15px rgba(255, 87, 34, 0.5);
+            box-shadow: 0 8px 20px rgba(255, 87, 34, 0.5);
+        }
+
+        .about-text {
+            max-width: 600px;
         }
 
         footer {
@@ -196,23 +168,6 @@
             font-size: 0.9rem;
         }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            color: #fff;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #ff5722;
-        }
-
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -227,63 +182,27 @@
 </head>
 <body>
     <nav>
-        <img src="images/logo.png" alt="Lynette Shen Logo">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header id="home">
-        <h1>
-            Hi, I'm Lynette! A 
-            <span style="color: rgba(255,87,34,0.8);">Product Designer</span> 
-            who enjoys designing creative and delightful experiences.👩🏻‍💻
-        </h1>
-        <p>
-            I'm motivated by <span style="color: rgba(255,87,34,0.8);">intentional problem-solving,</span> experienced in design thinking, and driven by empathy to create user-centric designs. 
-        </p>
-        <a href="#about" class="cta-button">Click Me!!</a>
+        <h1>About Me</h1>
+        <p>Get to know Lynette Shen, a Product Designer driven by creativity, empathy, and a passion for creating meaningful experiences.</p>
+        <a href="#about">Learn More</a>
     </header>
 
-
- <section class="case-stud" id="case studies">
-        <h2>App design</h2>
-        <p>A subletting app designed by me and my team, aimed to help coop students in their journey of finding a suitable home🏡</p>
-   <p>
-    <span style="color: rgba(255,87,34,0.8);"> CLICK IMAGE TO VIEW WORK </span>
-   </p> 
-        <a href="https://www.figma.com/proto/43utt4fzKoGgri1SN7r3DA/GBDA210-group-project?page-id=138%3A63&node-id=760-8953&node-type=frame&viewport=-333%2C407%2C0.11&t=cXZbHQBIaHyUNerR-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=760%3A8953" target="_blank">
-            <img src="image.png" alt="UX/UI Case Study Thumbnail">
-        </a>
-
-    <section id="Redesigning app">
-    <h2>Redesigning "大力赏" App </h2>
-    <p>Identifying pain points and creating a high-fidelity prototype for the 大力赏 app.</p>
-    <video autoplay muted width="300">
-        <source src="gbda2288.mp4" type="video/mp4">
-    </video>
-</section>
-
-
-    <section class="playgournd" id="playground">
-        <h2>Playground</h2>
-        <img src="gbda202v.jpg" alt="Design 1">
-        <img src="gbdaaa.jpg" alt="Design 3">
-        <video width="500" controls>
-        <source src="gbda202_Xr6IYFfe.mp4" type="video/mp4">
-    </video>
-        
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with me via these platforms:</p>
-        <div class="social-icons">
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">LinkedIn</a>
+    <section id="about">
+        <h2>Who I Am</h2>
+        <div class="about-content">
+            <img src="images/about-me.jpg" alt="Lynette Shen">
+            <div class="about-text">
+                <p>Hello! I'm Lynette Shen, a passionate Product Designer with a love for creating delightful and functional user experiences. With a background in design thinking and a keen eye for aesthetics, I focus on blending creativity with intentional problem-solving to meet user needs.</p>
+                <p>When I'm not designing, you can find me exploring art, diving into UX research, or collaborating with like-minded individuals to bring ideas to life. My mission is to craft designs that resonate with people and make a positive impact on their lives.</p>
+            </div>
         </div>
     </section>
 
